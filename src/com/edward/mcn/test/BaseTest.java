@@ -58,10 +58,10 @@ public class BaseTest {
 		Digit thousandNum2 = new Digit(1538);
 		Digit thousandNum3 = new Digit(2371);
 		Digit thousandNum4 = new Digit(3642);
-		assertThat(thousandNum1.toString(), is("ONE THOUSAND, TWO HUNDRED AND THIRTY-FOUR"));
-		assertThat(thousandNum2.toString(), is("ONE THOUSAND, FIVE HUNDRED AND THIRTY-EIGHT"));
-		assertThat(thousandNum3.toString(), is("TWO THOUSAND, THREE HUNDRED AND SEVENTY-ONE"));
-		assertThat(thousandNum4.toString(), is("THREE THOUSAND, SIX HUNDRED AND FORTY-TWO"));
+		assertThat(thousandNum1.toString(), is("ONE THOUSAND, TWO HUNDRED THIRTY-FOUR"));
+		assertThat(thousandNum2.toString(), is("ONE THOUSAND, FIVE HUNDRED THIRTY-EIGHT"));
+		assertThat(thousandNum3.toString(), is("TWO THOUSAND, THREE HUNDRED SEVENTY-ONE"));
+		assertThat(thousandNum4.toString(), is("THREE THOUSAND, SIX HUNDRED FORTY-TWO"));
 	}
 
 	@Test
