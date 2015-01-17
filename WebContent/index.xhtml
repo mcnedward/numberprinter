@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<title><ui:insert name="title">Number Printer</ui:insert></title>
+	<h:outputStylesheet library="css" name="number.css" />
+</h:head>
+
+<h:body>
+	<div id="main">
+		<div id="content">
+			<h2>ENTER A NUMBER TO CONVERT!</h2>
+			<h:form styleClass="form">
+				<h:inputText value="#{numberPrinter.input}" id="txtInput" />
+				<table class="buttons">
+					<tr class="buttons">
+						<td><h:commandButton class="button" id="btnToEnglish"
+								action="#{numberPrinter.toString}" value="ENGLISH" /></td>
+						<td><h:commandButton class="button" id="btnToRomanNumeral"
+								action="#{numberPrinter.toRomanNumeral}" value="ROMAN NUMERAL" /></td>
+					</tr>
+				</table>
+			</h:form>
+		</div>
+		<h:outputText styleClass="display" id="txtDisplay"
+			binding="#{numberPrinter.txtDisplay}"
+			value="#{numberPrinter.display}"></h:outputText>
+	</div>
+</h:body>
+
+</html>
