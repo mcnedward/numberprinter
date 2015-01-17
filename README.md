@@ -1,2 +1,2 @@
 # numberprinter
-Convert numbers to their English word of Roman numeral.
+Convert numbers to their English word or Roman numeral.
