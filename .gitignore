@@ -1,7 +1,10 @@
 .metadata
 bin/
 tmp/
+<<<<<<< HEAD
 build/
+=======
+>>>>>>> 8b0db799e54f7bb67a43318db9d4f97a1a265391
 *.tmp/
 *.bak
 
