@@ -22,11 +22,11 @@
 								action="#{numberPrinter.toRomanNumeral}" value="ROMAN NUMERAL" /></td>
 					</tr>
 				</table>
+				<h:outputText styleClass="display" id="txtDisplay"
+					binding="#{numberPrinter.txtDisplay}"
+					value="#{numberPrinter.display}"></h:outputText>
 			</h:form>
 		</div>
-		<h:outputText styleClass="display" id="txtDisplay"
-			binding="#{numberPrinter.txtDisplay}"
-			value="#{numberPrinter.display}"></h:outputText>
 	</div>
 </h:body>
 
