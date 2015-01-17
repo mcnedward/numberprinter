@@ -101,6 +101,8 @@ public class NumberPrinter {
 				Digit digit = convertNumber(txtNumber.getText());
 				if (digit != null)
 					lblDisplay.setText(digit.toRomanNumeral());
+				// String display = Digit.getConvertedDigit(Integer.parseInt(txtNumber.getText()), "roman");
+				// lblDisplay.setText(display);
 			}
 		});
 		this.btnConvertToEnglish.addActionListener(new ActionListener() {
@@ -108,6 +110,8 @@ public class NumberPrinter {
 				Digit digit = convertNumber(txtNumber.getText());
 				if (digit != null)
 					lblDisplay.setText(digit.toString());
+				// String display = Digit.getConvertedDigit(Integer.parseInt(txtNumber.getText()), "english");
+				// lblDisplay.setText(display);
 			}
 		});
 		this.lblDisplay = new JLabel();

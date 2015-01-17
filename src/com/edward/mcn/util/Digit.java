@@ -55,6 +55,15 @@ public class Digit {
 		convertToRomanNumeral();
 	}
 
+	public static String getConvertedDigit(int number, String outputType) {
+		Digit digit = new Digit(number);
+		if (outputType == "english")
+			return digit.toString();
+		if (outputType == "roman")
+			return digit.toRomanNumeral();
+		return "Invalid input type. Please use either \"english\" or \"roman\".";
+	}
+
 	/**
 	 * Sorts the individual digits for the number.
 	 * 
