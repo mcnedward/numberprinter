@@ -125,8 +125,7 @@ public class Digit {
 		if (thousand != 0) {
 			word = word == "" ? englishThousand + " thousand" : englishThousand + " thousand, " + word;
 		}
-		englishWord = word.trim();
-		this.englishWord.trim();
+		this.englishWord = word.trim();
 	}
 
 	/**

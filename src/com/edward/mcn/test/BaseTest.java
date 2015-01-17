@@ -68,7 +68,7 @@ public class BaseTest {
 	public void testSomeRomanNumeralsLessThan100() {
 		for (int x = 0; x < 100; x++) {
 			Digit digit = new Digit(x);
-
+			System.out.println(digit.toRomanNumeral());
 			String romanNumeral = digit.toRomanNumeral();
 			if (x == 12) {
 				assertThat(romanNumeral, is("XII"));
